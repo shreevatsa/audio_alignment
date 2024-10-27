@@ -17,6 +17,9 @@ Now can download them all, with:
 ```sh
 wget --input-file=Raghuvamsha-mUlam-vedabhoomi.org_vbr.m3u
 rm "00 License CC BY-NC-ND 3.0 Vedabhoomi.mp3"
+mkdir audio
+mv *.mp3 audio/
+mv "Raghuvamsha-mUlam-vedabhoomi.org_vbr.m3u" audio/
 ```
 
 ### Get the text
@@ -34,4 +37,8 @@ First attempt: Copy-pasting from https://sa.wikisource.org/wiki/रघुवं�
 Second attempt: We can use [the Wikisource export](https://ws-export.wmcloud.org/?lang=sa&title=%E0%A4%B0%E0%A4%98%E0%A5%81%E0%A4%B5%E0%A4%82%E0%A4%B6%E0%A4%AE%E0%A5%8D) into plain text (downloaded into `raghuvamsha.txt`). Then try to split into files... the problem is that somehow the third sarga appears before the second?
 
 Third attempt: We [can use](https://opendata.stackexchange.com/questions/6974/formats-of-texts-from-wikisource/9431#9431) the `?action=raw` links like [this](https://sa.wikisource.org/wiki/%E0%A4%B0%E0%A4%98%E0%A5%81%E0%A4%B5%E0%A4%82%E0%A4%B6%E0%A4%AE%E0%A5%8D/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A5%E0%A4%AE%E0%A4%83_%E0%A4%B8%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A4%83?action=raw). So back to `text.urls` it is.
+
+(Ended up [fixing](https://sa.wikisource.org/w/index.php?title=%E0%A4%B0%E0%A4%98%E0%A5%81%E0%A4%B5%E0%A4%82%E0%A4%B6%E0%A4%AE%E0%A5%8D&diff=404578&oldid=399802) a typo.)
+
+
 
