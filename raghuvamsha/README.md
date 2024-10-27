@@ -29,7 +29,9 @@ Where to get the text from? Options:
 
 Let's pick Wikisource so that errors can be corrected.
 
-First attempt: Copy-pasting from https://sa.wikisource.org/wiki/रघुवंशम् into something like Obsidian and editing a bit, gives us the list of urls (in `text.urls`). Then we could try downloading them (`wget --input-file=text.urls`), but that turns out to be a bad idea -- the files are hard to deal with, and the filenames are in alphabetical order ("अष्टादशः सर्गः" comes first).
+First attempt: Copy-pasting from https://sa.wikisource.org/wiki/रघुवंशम् into something like Obsidian and editing a bit, gives us the list of urls (in `text.urls`). Then we could try downloading them (`wget --input-file=text.urls`), but that turns out to be a bad idea -- the files are hard to deal with, and the filenames are in alphabetical order ("अष्टादशः सर्गः" comes first). 
 
-Second attempt: We can use [the Wikisource export](https://ws-export.wmcloud.org/?lang=sa&title=%E0%A4%B0%E0%A4%98%E0%A5%81%E0%A4%B5%E0%A4%82%E0%A4%B6%E0%A4%AE%E0%A5%8D) into plain text (downloaded into `raghuvamsha.txt`).
+Second attempt: We can use [the Wikisource export](https://ws-export.wmcloud.org/?lang=sa&title=%E0%A4%B0%E0%A4%98%E0%A5%81%E0%A4%B5%E0%A4%82%E0%A4%B6%E0%A4%AE%E0%A5%8D) into plain text (downloaded into `raghuvamsha.txt`). Then try to split into files... the problem is that somehow the third sarga appears before the second?
+
+Third attempt: We [can use](https://opendata.stackexchange.com/questions/6974/formats-of-texts-from-wikisource/9431#9431) the `?action=raw` links like [this](https://sa.wikisource.org/wiki/%E0%A4%B0%E0%A4%98%E0%A5%81%E0%A4%B5%E0%A4%82%E0%A4%B6%E0%A4%AE%E0%A5%8D/%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A5%E0%A4%AE%E0%A4%83_%E0%A4%B8%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A4%83?action=raw). So back to `text.urls` it is.
 
