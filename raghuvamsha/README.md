@@ -29,9 +29,7 @@ Where to get the text from? Options:
 
 Let's pick Wikisource so that errors can be corrected.
 
-Copy-pasting from https://sa.wikisource.org/wiki/रघुवंशम् into something like Obsidian and editing a bit, gives us the list of urls (in `text.urls`).
+First attempt: Copy-pasting from https://sa.wikisource.org/wiki/रघुवंशम् into something like Obsidian and editing a bit, gives us the list of urls (in `text.urls`). Then we could try downloading them (`wget --input-file=text.urls`), but that turns out to be a bad idea -- the files are hard to deal with, and the filenames are in alphabetical order ("अष्टादशः सर्गः" comes first).
 
-We could try downloading them (`wget --input-file=text.urls`), but that turns out to be a bad idea.
-
-We can use [the Wikisource export](https://ws-export.wmcloud.org/?lang=sa&title=%E0%A4%B0%E0%A4%98%E0%A5%81%E0%A4%B5%E0%A4%82%E0%A4%B6%E0%A4%AE%E0%A5%8D) into plain text (downloaded into `raghuvamsha.txt`).
+Second attempt: We can use [the Wikisource export](https://ws-export.wmcloud.org/?lang=sa&title=%E0%A4%B0%E0%A4%98%E0%A5%81%E0%A4%B5%E0%A4%82%E0%A4%B6%E0%A4%AE%E0%A5%8D) into plain text (downloaded into `raghuvamsha.txt`).
 
