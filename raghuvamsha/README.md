@@ -132,3 +132,13 @@ curl -L -O https://github.com/sanskritsahitya-com/data/raw/refs/heads/main/raghu
 jq '.data | map({c, n, i, v})' raghuvansham.json > raghuvamsha.json
 ```
 
+### Split text
+
+See `split.py`
+
+```sh
+uv run split.py
+mkdir text/
+mv audio/*.txt text/
+```
+
