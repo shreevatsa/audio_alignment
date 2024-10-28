@@ -119,7 +119,7 @@ wc -l *useful.txt
     1616 total
 ```
 
-Fourth attempt: Get text from https://sanskritsahitya.org/raghuvansham
+Fourth attempt: Let's abandon Wikisource and go back to one of the other sources. Such as https://sanskritsahitya.org/raghuvansham
 
 Verified that the counts of verses match, which is great!
 
@@ -129,5 +129,6 @@ As raw JSON:
 
 ```
 curl -L -O https://github.com/sanskritsahitya-com/data/raw/refs/heads/main/raghuvansham/raghuvansham.json
+jq '.data | map({c, n, i, v})' raghuvansham.json > raghuvamsha.json
 ```
 
