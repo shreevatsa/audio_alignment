@@ -132,9 +132,7 @@ curl -L -O https://github.com/sanskritsahitya-com/data/raw/refs/heads/main/raghu
 jq '.data | map({c, n, i, v})' raghuvansham.json > raghuvamsha.json
 ```
 
-### Split text
-
-See `split.py`
+Now we can split it; see `split.py`
 
 ```sh
 uv run split.py
@@ -142,3 +140,11 @@ mkdir text/
 mv audio/*.txt text/
 ```
 
+### Align them
+
+(See instructions in https://github.com/avinashvarna/audio_alignment/blob/main/interface/README.md#how-to-add-new-data — basically need to use `utils/alignment.py`)
+
+```py
+from utils.alignment import align
+align(text_path, audio_path, align_path, word_align=True)
+```
