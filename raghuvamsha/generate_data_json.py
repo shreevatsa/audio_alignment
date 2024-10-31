@@ -24,7 +24,7 @@ def generate_data_json():
         data["data"].append({
             "id": chapter_id,
             "name": chapter_name,
-            "audio_url": f"{audio_dir}/{audio_file}",
+            "audio_url": f"https://archive.org/download/Raghuvamsha-mUlam-vedabhoomi.org/{audio_file}",
             "word_alignment": f"{alignment_dir}/{alignment_file}",
             "text": f"{text_dir}/{text_file}"
         })
