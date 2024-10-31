@@ -15,10 +15,11 @@ def generate_data_json():
     text_files = sorted(os.listdir(text_dir))
     audio_files = sorted(os.listdir(audio_dir))
     alignment_files = sorted(os.listdir(alignment_dir))
+    print(len(text_files), len(audio_files), len(alignment_files))
 
     for text_file, audio_file, alignment_file in zip(text_files, audio_files, alignment_files):
         chapter_id = text_file.replace(".txt", "")
-        chapter_name = chapter_id.replace("-", " ")
+        chapter_name = chapter_id
 
         data["data"].append({
             "id": chapter_id,
