@@ -152,3 +152,12 @@ align(text_path, audio_path, align_path, word_align=True)
 Extracted out the relevant bits and put them into `align.py` to keep it self-contained (for one file).
 Wrote `align.sh` to run alignment for all files.
 
+## Generate data.json
+
+See https://github.com/shreevatsa/audio_alignment/pull/1 — can run `python3 generate_data_json.py` (from within the directory) to generate `data.json`.
+
+Then commit and push.
+
+Results are at https://shreevatsa.github.io/audio_alignment/corpus/raghuvamsha/Raghuvamsha-Sarga01-01-17/ etc, and the aeneas alignment is **terrible**!
+
+Back to the drawing board...
