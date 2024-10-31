@@ -148,3 +148,7 @@ mv audio/*.txt text/
 from utils.alignment import align
 align(text_path, audio_path, align_path, word_align=True)
 ```
+
+Extracted out the relevant bits and put them into `align.py` to keep it self-contained (for one file).
+Wrote `align.sh` to run alignment for all files.
+
