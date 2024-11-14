@@ -162,11 +162,11 @@ Results are at https://shreevatsa.github.io/audio_alignment/corpus/raghuvamsha/R
 
 Back to the drawing board...
 
-### Aligning without Aeneas
+### Aligning without Aeneas?
 
 Considering just doing it with the raw audio.
 
-Metrical analysis of the Raghuvamsha, via https://sanskritmetres.appspot.com/fulltext
+Aside: Metrical analysis of the Raghuvamsha, via https://sanskritmetres.appspot.com/fulltext
 
 (Not very thorough or accurate)
 
@@ -189,4 +189,8 @@ Metrical analysis of the Raghuvamsha, via https://sanskritmetres.appspot.com/ful
 17. Anuṣṭubh...
 18. Upajāti...
 19. Rathoddhatā...
+
+### Equal-length lines
+
+With help from Claude... see `align-equal.py`.
 
