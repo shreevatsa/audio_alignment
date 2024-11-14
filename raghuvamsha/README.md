@@ -152,7 +152,7 @@ align(text_path, audio_path, align_path, word_align=True)
 Extracted out the relevant bits and put them into `align.py` to keep it self-contained (for one file).
 Wrote `align.sh` to run alignment for all files.
 
-## Generate data.json
+### Generate data.json
 
 See https://github.com/shreevatsa/audio_alignment/pull/1 — can run `python3 generate_data_json.py` (from within the directory) to generate `data.json`.
 
@@ -161,3 +161,32 @@ Then commit and push.
 Results are at https://shreevatsa.github.io/audio_alignment/corpus/raghuvamsha/Raghuvamsha-Sarga01-01-17/ etc, and the aeneas alignment is **terrible**!
 
 Back to the drawing board...
+
+### Aligning without Aeneas
+
+Considering just doing it with the raw audio.
+
+Metrical analysis of the Raghuvamsha, via https://sanskritmetres.appspot.com/fulltext
+
+(Not very thorough or accurate)
+
+1. Anuṣṭup x94 + Praharṣiṇi
+2. Upajāti x74 + Mālinī
+3. Vaṃśastha x69 + hariṇī
+4. Anuṣṭup x86 + Praharṣiṇī x2
+5. Vasantatilakā x73 + Mālinī x2 + Puṣpitāgrā
+6. Upajāti x84 + Mālinī + Puṣpitāgrā
+7. Upajāti x69 + Mālinī x2
+8. Viyoginī x90 + Toṭakam + praharṣiṇī + Vasantatilakā x2 + Mandākrāntā
+9. Drutavilambitam x54 + Vasantatilakā x many + other metres
+10. Anuṣṭubh...
+11. Rathoddhatā xx + Vasantatilakā + Mālinī
+12. Anuṣṭubh...
+13. Upajāti...
+14. Upajāti...
+15. Anuṣṭubh...
+16. Upajāti...
+17. Anuṣṭubh...
+18. Upajāti...
+19. Rathoddhatā...
+
