@@ -48,14 +48,12 @@ def create_basic_alignment(audio_path, text_path):
         word_starts = np.cumsum([line_start] + word_durations[:-1])
         word_ends = word_starts + word_durations
 
-        # Create alignment entry
+        # Create alignment entry, following the conventions of the other files.
         for j, word in enumerate(words):
             alignments.append({
                 'begin': str(word_starts[j]),
-                'children': [],
                 'end': str(word_ends[j]),
-                'id': f'p{1:06}s{i+1:06}w{j+1:06}',
-                "language": "hi",
+                'id': f'p000001s{i+1:06}w{j+1:06}',
                 'lines': [word],
             })
     return alignments
